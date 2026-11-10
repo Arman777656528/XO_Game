@@ -373,7 +373,7 @@ void run_server(int server_fd) {
 }
 
 int main(void) {
-    signal(SIGPIPE, SIG_IGN);
+    signal(SIGPIPE, SIG_IGN); 
 
     int server_fd = create_server(PORT);
     if (server_fd == -1) {
